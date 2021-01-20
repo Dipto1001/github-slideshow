@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+</head>
+
+<body>
+    <?php
+    // basic structure of php script
+    ?>
+
+
+    <?php
+    //print hello world in php
+    echo "hello world!";
+
+    ?>
+    <br>
+
+    <?php
+    //different types of comment in php
+
+    //this is a single line comment
+
+    # this is also a single line comment
+
+    /*This is used for multiple line comment*/
+
+    //using comment in order to exclude part of a code
+    $x = 5 /* +15 */ + 5;
+    echo $x;
+
+    ?>
+    <br>
+
+    <?php
+    //creating or declaring php variable 
+
+    $txt = "Hello world";
+    $x = 5;
+    $y = 10.5;
+
+    //getting printout of variable after declaring
+    echo $txt . "<br>";
+    echo $x . "<br>";
+    echo $y . "<br>";
+    ?>
+    <!-- More way to get print out in php-->
+    <?php
+    echo "hello bangladesh" . "<br>";
+    print_r("hello world" . "<br>");
+    print("hello bangladesh");
+
+
+    ?>
+
+    <!-- php datatype -->
+
+    <?php
+
+    //defining php integer
+    $x = 5;
+    var_dump($x); //var_dump helps to define data type and also the value assign to it
+
+    //defining  php float
+    $c = 10.6;
+    var_dump($c);
+
+    // defining php array
+
+    $country = array("bangladesh", "india", "Malaysia");
+
+    var_dump($country);
+
+    //defining php null
+    $x = null;
+    var_dump($x . "<br>");
+
+    ?>
+
+    <!-- php operator -->
+
+
+    <?php
+    //arithmetic operator
+    $x = 25;
+    $y = 20;
+
+    echo $x + $y . "<br>"; //addition
+    echo $x - $y . "<br>"; //subtraction
+    echo $x * $y . "<br>"; //multiplication
+    echo $x / $y . "<br>"; //division
+    echo $x % $y . "<br>"; //modulus
+    ?>
+
+    <?php
+    //assignment operator
+    $x = 10; //addition
+    $x += 100;
+
+    echo $x  . "<br>";
+
+    $x = 20; //subtraction
+    $x -= 100;
+
+    echo $x  . "<br>";
+
+    $x = 30; //multiplication
+    $x *= 100;
+
+    echo $x  . "<br>";
+
+    $x = 10; //division
+    $x /= 100;
+
+    echo $x  . "<br>";
+
+    $x = 15; //modulus
+    $x %= 100;
+
+    echo $x  . "<br>";
+    ?>
+
+    <!-- php increment and decrement-->
+    <?php
+    $x = 5;
+    echo ++$x . "<br>"; //pre-increment
+
+    $x = 10;
+    echo $x++ . "<br>";
+    echo $x . "<br>"; //post increment
+
+    $x = 25;
+    echo --$x . "<br>"; //pre decrement
+
+    $x = 30;
+    echo $x-- . "<br>";
+    echo $x . "<br>"; //post decrement
+
+    ?>
+
+
+
+
+    <!-- php logical operator-->
+    <?php
+    $x = 5;
+    $y = 10;
+    if ($x == 5 and $y == 10) {
+        echo "Hello World!  <br>";
+    } //logical And operator.
+
+    if ($x == 5 or $y == 9) {
+        echo "Hello World!  <br>";
+    } //logical OR operator.
+
+    if ($x == 5 xor $y == 9) {
+        echo "Hello World!  <br>";
+    } // logicla xor operator.
+
+    if ($x == 5 && $y == 10) {
+        echo "Hello World! <br>";
+    } // logical && operator.
+
+    if ($x == 5 || $y == 9) {
+        echo "Hello World!  <br>";
+    } // logical || operator.
+
+    if ($x !== 10) {
+        echo "Hello World!  <br>";
+    } // logical not operator.
+
+    ?>
+
+    <!-- php comparism operator-->
+    <?php
+    $x = 10;
+    $y = 10;
+    //equal operator
+    var_dump($x == $y); //bool true when both are equal operator
+    //identical operator
+    var_dump($x === $y); //bool true when they are equal and same type
+    //Not equal operator
+    var_dump($x != $y); //return true when $x not equal to $y
+    var_dump($x <> $y);
+    // greater than operator
+    var_dump($x < $y);
+    //less than operator
+    var_dump($x > $y);
+
+
+    ?>
+
+    <!--php string operator-->
+
+    <?php
+    //concatenation uses
+    $x = 'I Love';
+
+    $y = 'Bangladesh';
+    echo ($x . $y);
+
+    ?>
+
+    <!-- php conditional statement-->
+
+    <?php
+    //if statement
+    $x = 25;
+    if ($x < "30"); {
+        echo "Have a great day";
+    }
+    ?>
+
+    <?php
+    //if else statement
+
+    $x = 10;
+    $y = 20;
+
+    if ($x < $y) {
+        echo "x is less than y";
+    } else {
+        echo "x is more than y";
+    }
+
+
+    ?>
+
+    <?php
+    //if-elseif-else statement
+    $x = 30;
+    $y = 20;
+    $z = 15;
+
+    if ($x < $y && $x < $z) {
+        echo "x is the smallest number";
+    } elseif ($y < $x && $y < $z) {
+        echo "y is the smallest number";
+    } else {
+        echo "z is the smallest number";
+    }
+
+    ?>
+
+    <?php
+    //switch statement
+    $favcolor = "magenda";
+    switch ($favcolor) {
+        case "red":
+            echo "Your favorite color is red!";
+            break;
+        case "blue":
+            echo "Your favourite color is blue ";
+            break;
+        case "green":
+            echo "Your favourite color is green";
+            break;
+        case "yellow":
+            echo "Your favourite color is yellow";
+            break;
+        default:
+            echo "Your favourite color is not green ,yellow,red or blue";
+    }
+
+    ?>
+
+    <!--php loop statement-->
+
+
+    <?php
+    //while loop
+
+    $x = 5;
+    while ($x <= 10) {
+        echo "The number is $x  <br>";
+        $x++;
+    }
+
+    ?>
+
+    <?php
+    //do while loop structure
+    $x = 1;
+    do {
+        echo "The number is $x  <br>";
+        $x++;
+    } while ($x < 10);
+
+    ?>
+
+
+
+
+
+
+
+</body>
+
+</html>
